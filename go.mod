@@ -1,3 +1,3 @@
-module github.com/brendantang/embed-elm-example
+module github.com/brendantang/elm-go-embed-example
 
 go 1.16

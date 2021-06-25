@@ -1,1 +1,7 @@
+# elm build artifacts
 elm-stuff
+elm-frontend/build/*.html
+elm-frontend/build/*.js
+
+# binary
+dist/elm-go-embed-example 

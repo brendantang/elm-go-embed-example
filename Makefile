@@ -4,4 +4,4 @@ frontend:
 	cd elm-frontend && elm make src/Main.elm --output build/index.html
 
 server:
-	go build
+	go build -o dist
