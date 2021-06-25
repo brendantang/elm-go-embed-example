@@ -11,13 +11,13 @@ import (
 // files at the provided path in the compiled binary. In this case, we bundle
 // the build directory of our Elm frontend and make it available as an `fs.FS`
 // value.
-//go:embed elm-frontend/build/*
+//go:embed elm-frontend/public/*
 var f embed.FS
 
 func main() {
 	// `frontend` is an `fs.FS` value with its "root" inside the Elm
 	// frontend's build directory.
-	frontend, err := fs.Sub(f, "elm-frontend/build")
+	frontend, err := fs.Sub(f, "elm-frontend/public")
 
 	if err != nil {
 		log.Fatal(err)

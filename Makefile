@@ -1,7 +1,7 @@
 all: frontend server
 
 frontend: 
-	cd elm-frontend && elm make src/Main.elm --output build/index.html
+	cd elm-frontend && elm-spa build 
 
 server:
 	go build -o dist
